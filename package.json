@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev:build",
     "dev:build": "grunt",
-    "prod:build": "NODE_ENV=production grunt",
+    "prod:build": "NODE_ENV=production yarn grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

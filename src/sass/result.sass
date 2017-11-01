@@ -1,0 +1,37 @@
+@import colors
+
+.deck-result
+    text-align: center
+    .deck-result-content
+        padding: .5em 0 .5em
+        background: $gray-soft
+        .card-result 
+            padding: 1em
+            border: 1px solud $gray-dark
+            .card-result-inside
+                position: relative
+                text-align: left
+                padding: 1em
+                background: $white-main
+                float: left
+                width: calc(100% - 2em)
+                .logo, .text
+                    float: left 
+                .logo 
+                    width: 100px
+                    img 
+                        width: 100px
+                .text
+                    width: calc(100% - 100px - .5em)
+                    padding-left: .5em
+                    a 
+                        color: $gray-main
+                        text-decoration: none
+                    .text-title
+                        font-weight: bold
+                        text-transform: capitalize
+                    .text-stats 
+                        position: absolute 
+                        bottom: 1em
+                
+        

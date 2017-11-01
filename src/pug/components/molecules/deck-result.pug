@@ -1,0 +1,46 @@
+.deck-result
+    .container
+    .grid 
+        .col-12
+            .subtitle 
+                h3.title Pencarian Populer
+                p Berikut adalah beberapa keperluan yang sering dicari oleh pengunjung.
+    .deck-result-content
+        .container 
+            .grid
+                - 
+                    let popular_result = [
+                        {
+                            title: 'Cara perpanjang STNK',
+                            logo: 'images/logos/polda-metro-jaya.png',
+                            logo_title: 'polda metro jaya',
+                            stats_lokasi: 'di Polda metro jaya',
+                            stats_count: 'dicari 3400x - oleh 234 pengguna'
+                        },
+                        {
+                            title: 'Membuat surat nikah',
+                            logo: 'images/logos/kua.png',
+                            logo_title: 'KUA',
+                            stats_lokasi: 'di KUA daerah 1',
+                            stats_count: 'dicari 3400x - oleh 234 pengguna'
+                        },
+                        {
+                            title: 'Membuat surat izin usaha',
+                            logo: 'images/logos/bp2t.png',
+                            logo_title: 'KUA',
+                            stats_lokasi: 'di KUA daerah 1',
+                            stats_count: 'dicari 3400x - oleh 234 pengguna'
+                        }
+                    ]
+                each n in popular_result
+                    .col-6_sm-12.card-result
+                        .card-result-inside
+                            .logo 
+                                img(src=n.logo title=n.logo_title)
+                            .text
+                                .text-title
+                                    a(href="result.html") #{n.title}
+                                .text-stats
+                                    | #{n.stats_lokasi}
+                                    br
+                                    | #{n.stats_count}  

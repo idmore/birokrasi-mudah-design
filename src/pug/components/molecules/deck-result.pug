@@ -32,15 +32,6 @@
                             stats_count: 'dicari 3400x - oleh 234 pengguna'
                         }
                     ]
+                include ../atoms/card-result
                 each n in popular_result
-                    .col-6_sm-12.card-result
-                        .card-result-inside
-                            .logo 
-                                img(src=n.logo title=n.logo_title)
-                            .text
-                                .text-title
-                                    a(href="result.html") #{n.title}
-                                .text-stats
-                                    | #{n.stats_lokasi}
-                                    br
-                                    | #{n.stats_count}  
+                    +card-result-view(n)

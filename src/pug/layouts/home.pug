@@ -10,12 +10,9 @@ html(lang='en')
         link(rel="manifest" href="manifest.json")
         link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet")
     body
-        include ../components/molecules/bigsearch
-
         .wrapper
+            include ../components/molecules/bigsearch
             block content
-
-        script(src="js/app.min.js")
-
-        include ../components/molecules/footer
+            script(src="js/app.min.js")
+            include ../components/molecules/footer
         

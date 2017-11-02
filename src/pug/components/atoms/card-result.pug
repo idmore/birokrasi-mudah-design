@@ -1,0 +1,12 @@
+mixin card-result-view(n)
+    .col-6_sm-12.card-result
+        .card-result-inside
+            .logo 
+                img(src=n.logo title=n.logo_title)
+            .text
+                .text-title
+                    a(href="result.html") #{n.title}
+                .text-stats
+                    | #{n.stats_lokasi}
+                    br
+                    | #{n.stats_count} 

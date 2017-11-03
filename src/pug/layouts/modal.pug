@@ -15,13 +15,13 @@ html(lang='en')
                 overflow: hidden;
             } 
     body
-        .modal
+        .modal(style="height:100%")
             .container 
                 .grid
                     .col-12
                         .modal-title 
-                            button.btn.btn-white.fa.fa-angle-left(href="javascript:;" title="Tampilkan berikutnya" type="button" style="margin-right:1.5em")
                             h1 this is title of modal
+                            button.btn-modal-close.btn.btn-white.fa.fa-close(href="javascript:;" title="Tampilkan berikutnya" type="button" style="margin-left:1.5em")
                         .modal-content 
                             article
                                 p 

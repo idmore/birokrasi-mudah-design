@@ -10,9 +10,19 @@ html(lang='en')
         link(rel="manifest" href="manifest.json")
         link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet")
     body
-        .wrapper
+        #wrapper.wrapper
             include ../components/molecules/bigsearch
             block content
-            script(src="js/app.min.js")
             include ../components/molecules/footer
-        
+
+        //- modal
+        #modal.modal
+            .container 
+                .grid
+                    .col-12
+                        .modal-title 
+                            h1 this is title of modal
+                            button.btn-modal-close.btn.btn-white.fa.fa-close(onclick="modal.close()" href="javascript:;" title="Tampilkan berikutnya" type="button" style="margin-left:1.5em")
+                        .modal-content 
+
+        script(src="js/app.min.js")

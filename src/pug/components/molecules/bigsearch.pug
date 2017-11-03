@@ -9,7 +9,7 @@ nav.main.bigsearch
         .grid-center
             .col-8_col-md-12_col-sm-12
                 h2(style="font-weight:300") 
-                    | Saya berasal dari Kabupaten/Kota 
+                    | Saya berada dari Kabupaten/Kota 
                     select.home-select-white
                         option Bekasi
                     br 
@@ -27,8 +27,31 @@ nav.main.bigsearch
 .container
     .grid-center 
         .col-8_col-md-12_col-sm-12.home-help
-            a(href="#") Cara Menggunakan
-            a(href="#") Sumber Data
-            a(href="#") Kontak Kami
+            a(href="javascript:;" onclick="modal.show('Cara Menggunakan', 'modal-howtouse')") Cara Menggunakan
+            a(href="javascript:;" onclick="modal.show('Sumber Data', 'modal-howtouse')") Sumber Data
+            a(href="javascript:;" onclick="modal.show('Kontak Kami', 'modal-howtouse')") Kontak Kami
+
+
+//- modal start
+#modal-howtouse.hide
+    article
+        p 
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum neque maximus lorem tempor sodales. Vestibulum a convallis nisi. Sed fringilla ante elit, quis rhoncus nibh congue non. Donec mollis lorem interdum dolor feugiat lacinia. Nullam eleifend tempor scelerisque. Ut aliquet erat vitae libero sodales, in egestas eros molestie. Praesent tristique nisi nec leo placerat tincidunt. Sed posuere augue in efficitur dapibus. Proin et purus sit amet nulla tincidunt lobortis eget in quam. Praesent tempor tempor pretium. Sed ornare sit amet augue sit amet convallis. Nulla tincidunt mi nulla, in scelerisque sem hendrerit non. Donec eget velit pretium dolor hendrerit malesuada tincidunt a metus. Morbi varius tellus lectus, in feugiat magna rutrum vel. Aliquam ultrices leo vitae ante maximus venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        p 
+            | Donec felis dui, dignissim quis ornare ac, ultricies nec dolor. In sollicitudin risus nec ligula sagittis aliquam. Integer tempus molestie elit, aliquam posuere ipsum. Ut nec tristique enim, in consequat tellus. Quisque convallis volutpat elit sed ultrices. Donec ut facilisis dolor. Nulla fringilla est sem, non varius odio cursus et.     
+
+#modal-source.hide
+    article
+        p 
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum neque maximus lorem tempor sodales. Vestibulum a convallis nisi. Sed fringilla ante elit, quis rhoncus nibh congue non. Donec mollis lorem interdum dolor feugiat lacinia. Nullam eleifend tempor scelerisque. Ut aliquet erat vitae libero sodales, in egestas eros molestie. Praesent tristique nisi nec leo placerat tincidunt. Sed posuere augue in efficitur dapibus. Proin et purus sit amet nulla tincidunt lobortis eget in quam. Praesent tempor tempor pretium. Sed ornare sit amet augue sit amet convallis. Nulla tincidunt mi nulla, in scelerisque sem hendrerit non. Donec eget velit pretium dolor hendrerit malesuada tincidunt a metus. Morbi varius tellus lectus, in feugiat magna rutrum vel. Aliquam ultrices leo vitae ante maximus venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        p 
+            | Donec felis dui, dignissim quis ornare ac, ultricies nec dolor. In sollicitudin risus nec ligula sagittis aliquam. Integer tempus molestie elit, aliquam posuere ipsum. Ut nec tristique enim, in consequat tellus. Quisque convallis volutpat elit sed ultrices. Donec ut facilisis dolor. Nulla fringilla est sem, non varius odio cursus et. 
+#modal-contact.hide 
+    article
+        p 
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum neque maximus lorem tempor sodales. Vestibulum a convallis nisi. Sed fringilla ante elit, quis rhoncus nibh congue non. Donec mollis lorem interdum dolor feugiat lacinia. Nullam eleifend tempor scelerisque. Ut aliquet erat vitae libero sodales, in egestas eros molestie. Praesent tristique nisi nec leo placerat tincidunt. Sed posuere augue in efficitur dapibus. Proin et purus sit amet nulla tincidunt lobortis eget in quam. Praesent tempor tempor pretium. Sed ornare sit amet augue sit amet convallis. Nulla tincidunt mi nulla, in scelerisque sem hendrerit non. Donec eget velit pretium dolor hendrerit malesuada tincidunt a metus. Morbi varius tellus lectus, in feugiat magna rutrum vel. Aliquam ultrices leo vitae ante maximus venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        p 
+            | Donec felis dui, dignissim quis ornare ac, ultricies nec dolor. In sollicitudin risus nec ligula sagittis aliquam. Integer tempus molestie elit, aliquam posuere ipsum. Ut nec tristique enim, in consequat tellus. Quisque convallis volutpat elit sed ultrices. Donec ut facilisis dolor. Nulla fringilla est sem, non varius odio cursus et. 
+
 
     

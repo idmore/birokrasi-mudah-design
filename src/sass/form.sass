@@ -38,7 +38,18 @@ select.home-select-white
     margin-top: 10px
 
 .btn
+    transition: all .5s ease
+    cursor: pointer
+    padding: .5em .8em
+    border-radius: .5em
+    text-decoration: none
     &.btn-white 
         background: transparent 
         color: $white-main
         border: 1px solid $white-main
+    &.btn-outline-white 
+        background: transparent 
+        color: $gray-main
+        border: 1px solid $gray-main
+        &:hover 
+            background: $gray-soft

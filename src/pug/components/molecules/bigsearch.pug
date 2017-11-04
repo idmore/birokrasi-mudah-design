@@ -7,7 +7,7 @@ nav.main.bigsearch
 
         .m-lg
         .grid-center
-            .col-8_col-md-12_col-sm-12
+            .col-8_md-12_sm-12
                 h2(style="font-weight:300") 
                     | Saya berada dari Kabupaten/Kota 
                     select.home-select-white
@@ -117,4 +117,8 @@ script.
         {
             recomendation.close()
         }
+    })
+
+    SearchEl.addEventListener('blur', () => {
+        recomendation.close()
     })

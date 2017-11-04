@@ -1,0 +1,77 @@
+extends layouts/default
+block title
+    title Perpanjang Surat Tanda Kendaraan Bermotor (STNK) - Birokrasi Mudah, Serius Kok
+
+block content
+    .container 
+        .grid 
+            .col-12
+                include components/atoms/card-subtitle
+                +card-subtitle('Cara Perpanjang Surat Tanda Kendaraan Bermotor(STNK) di Kota Bekasi', 'Update 34 Februaru 2017, oleh Samsat Kota Bekasi') 
+                br
+                .align-center 
+                    a.btn.btn-outline-white(href="javascript" style="margin-right:.5em" title="Simpan untuk dibuka dikemudian hari") 
+                        i.fa.fa-save 
+                        | &nbsp;Simpan
+                    a.btn.btn-outline-white(href="javascript" title="Download dalam bentuk PDF")
+                        i.fa.fa-download 
+                        | &nbsp;Download
+                br
+
+    .big-result 
+        .container
+            //- card alamat dan jadwal
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .title 
+                        h2 Alamat dan Jadwal
+                        small Berikut alamat dan jadwal untuk bisa melakukan "Perpanjang Surat Tanda Kendaraan Bermotor(STNK) di Kota Bekasi" 
+                    
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.big-result-card--map
+                        .big-result-card-map-embed
+                            iframe.map(src="//www.google.com/maps/embed/v1/place?q=samsat,bekasi&zoom=17&key=AIzaSyALC1j4_h9NQGFcK3wtYHVDxn8fFhwB210")
+                        .big-result-card-map-text 
+                            p 
+                                strong Kantor Samsat Bekasi
+                                br
+                                | Jl. Maju Negara 20, Bekasi Selatan 
+                            hr
+                            p
+                                strong Jadwal 
+                                    span.text-red (hari ini tutup)
+                            p    
+                                | Senin - Jum'at :&nbsp; 
+                                strong 07:00 - 14:00 WIB 
+                                br
+                                | Sabtu :&nbsp;
+                                strong 07:00 - 15:00 WIB  
+            //- card contact
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .title 
+                        h2 Alamat dan Jadwal
+                        small Berikut alamat dan jadwal untuk bisa melakukan "Perpanjang Surat Tanda Kendaraan Bermotor(STNK) di Kota Bekasi" 
+                    
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.big-result-card--map
+                        .big-result-card-map-embed
+                            iframe.map(src="//www.google.com/maps/embed/v1/place?q=samsat,bekasi&zoom=17&key=AIzaSyALC1j4_h9NQGFcK3wtYHVDxn8fFhwB210")
+                        .big-result-card-map-text 
+                            p 
+                                strong Kantor Samsat Bekasi
+                                br
+                                | Jl. Maju Negara 20, Bekasi Selatan 
+                            hr
+                            p
+                                strong Jadwal 
+                                    span.text-red (hari ini tutup)
+                            p    
+                                | Senin - Jum'at :&nbsp; 
+                                strong 07:00 - 14:00 WIB 
+                                br
+                                | Sabtu :&nbsp;
+                                strong 07:00 - 15:00 WIB                                        
+

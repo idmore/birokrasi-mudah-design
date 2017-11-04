@@ -33,7 +33,8 @@ nav.bigsearch
     position: relative
     text-align: center
     color: $white-main
-    height: calc(100vh - 80px)
+    height: calc(100vh - 80px) 
+    min-height: 400px
     &:after 
         content: ''
         background-image: url('../images/home-bg-1.jpg')
@@ -44,3 +45,9 @@ nav.bigsearch
         z-index: -1
         width: 100%
         height: 100%
+#bigsearch-recomendation
+    position: absolute 
+    top: 4em
+    opacity: 0
+    display: none
+    transition: all .5s ease

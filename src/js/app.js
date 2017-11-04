@@ -1,6 +1,7 @@
 var ModalEl = document.getElementById('modal')
-var Modal
+var ResultEl = document.getElementById('bigsearch-recomendation');
 var WrapperEl = document.getElementById('wrapper')
+var Modal
 
 // modal global
 window.modal = {
@@ -18,5 +19,19 @@ window.modal = {
         console.log('close modal')
         WrapperEl.style.filter = 'none'
         ModalEl.style.top = '-100vh'
+    }
+}
+
+//recomendation
+window.recomendation = {
+    show: function(data)
+    {
+        ResultEl.style.display = 'inherit'
+        ResultEl.style.opacity = 1
+    },
+    close: function()
+    {
+        ResultEl.style.opacity = 0
+        ResultEl.style.display = 'none'
     }
 }

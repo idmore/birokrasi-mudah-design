@@ -10,3 +10,11 @@ mixin card-result-view(n)
                     | #{n.stats_lokasi}
                     br
                     | #{n.stats_count} 
+mixin card-result-view-small(n)
+    .col-12.card-result.card-result-small
+        .card-result-inside
+            .logo 
+                img(src=n.logo title=n.logo_title)
+            .text
+                .text-title
+                    a(href="result.html") #{n.title}

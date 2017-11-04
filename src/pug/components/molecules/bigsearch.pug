@@ -15,12 +15,47 @@ nav.main.bigsearch
                     br 
                     | dan ingin 
                     strong mengurus...
-                form.form-container 
-                    .form-control
+                form.form-container
+                    .form-control(style="position:relative")
                         i.fa.fa-search.icon-home-search 
-                        input.input-lg.input-home-search(type="text" placeholder="Apa yang ingin anda urus ?")
+                        input#big-search-input.input-lg.input-home-search(type="text" placeholder="Apa yang ingin anda urus ?")
                         small 
                             | membuat surat nikah, perpanjang STNK, dll
+
+                        //- big search reccomendation    
+                        - 
+                            let recomendation_result = [
+                                {
+                                    title: 'Cara perpanjang STNK',
+                                    logo: 'images/logos/polda-metro-jaya.png',
+                                    logo_title: 'polda metro jaya',
+                                    stats_lokasi: 'di Polda metro jaya',
+                                    stats_count: 'dicari 3400x - oleh 234 pengguna'
+                                },
+                                {
+                                    title: 'Membuat surat nikah',
+                                    logo: 'images/logos/kua.png',
+                                    logo_title: 'KUA',
+                                    stats_lokasi: 'di KUA daerah 1',
+                                    stats_count: 'dicari 3400x - oleh 234 pengguna'
+                                },
+                                {
+                                    title: 'Membuat surat izin usaha',
+                                    logo: 'images/logos/bp2t.png',
+                                    logo_title: 'KUA',
+                                    stats_lokasi: 'di KUA daerah 1',
+                                    stats_count: 'dicari 3400x - oleh 234 pengguna'
+                                }
+                            ]
+
+                        #bigsearch-recomendation.deck-result
+                            .deck-result-content.bg-white(style="padding:0")
+                                .grid
+                                    include ../atoms/card-result
+                                    each n in recomendation_result
+                                        +card-result-view-small(n, big)
+                        //- end of big search reccomendation
+
         .m-lg
 
 //- help
@@ -54,4 +89,32 @@ nav.main.bigsearch
             | Donec felis dui, dignissim quis ornare ac, ultricies nec dolor. In sollicitudin risus nec ligula sagittis aliquam. Integer tempus molestie elit, aliquam posuere ipsum. Ut nec tristique enim, in consequat tellus. Quisque convallis volutpat elit sed ultrices. Donec ut facilisis dolor. Nulla fringilla est sem, non varius odio cursus et. 
 
 
-    
+script. 
+    const SearchEl = document.getElementById('big-search-input');
+    let time
+
+    const sample_data = [
+        {
+            logo: 'images/logos/polda-metro-jaya.png',
+            text: 'Cara perpanjang STNK'
+        },
+        {
+            logo: 'images/logos/kua.png',
+            text: 'Membuat surat nikah'
+        },
+        {
+            logo: 'images/logos/bp2t.png',
+            text: 'Membuat surat ijin usaha'
+        }
+    ]
+
+    //- event listener
+    SearchEl.addEventListener('keyup', (e) => {
+        if(e.target.value)
+        {
+            recomendation.show(sample_data)
+        }else 
+        {
+            recomendation.close()
+        }
+    })

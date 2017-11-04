@@ -36,16 +36,14 @@ window.recomendation = {
     },
     resultEl: function(data)
     {
-        return `
-        <div class="col-12 card-result card-result-small">
-            <div class="card-result-inside">
-            <div class="logo"> <img src="${n.image}" title="logo lembaga"/></div>
-            <div class="text">
-                <div class="text-title"><a href="result.html">${n.text}</a></div>
-            </div>
-            </div>
-        </div>
-        `
+        return '<div class="col-12 card-result card-result-small">'+
+            '<div class="card-result-inside">'+
+                '<div class="logo"> <img src="'+n.image+'" title="logo lembaga"/></div>'+
+                '<div class="text">'+
+                    '<div class="text-title"><a href="result.html">'+n.text+'</a></div>'+
+                '</div>'+
+            '</div>'+
+        '</div>'
     },
     close: function()
     {

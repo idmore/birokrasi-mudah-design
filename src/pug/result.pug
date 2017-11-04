@@ -46,32 +46,91 @@ block content
                                 strong 07:00 - 14:00 WIB 
                                 br
                                 | Sabtu :&nbsp;
-                                strong 07:00 - 15:00 WIB  
+                                strong 07:00 - 15:00 WIB 
+            //- end of card alamat dan jadwal
+
+            //- card persyaratan
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .title 
+                        h2 Persyaratan
+                        small Pastikan anda menyiapkan segala persiapan yang ada di bawah ini.
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.m-0
+                        .big-text 
+                            .big-text-left
+                                input(type="checkbox").btn.btn-white
+                            .big-text-right
+                                | Foto kopi Kartu Keluarga (2 lembar) dan Fotokopi KTP (2 lembar)
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card
+                        .big-text 
+                            .big-text-left
+                                input(type="checkbox").btn.btn-white
+                            .big-text-right
+                                | Pas foto 3x2cm berwarna dengan background warna biru (1 lembar)
+            //- end of card persyaratan
+
+            //- card mekanisme
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .title 
+                        h2 Mekanisme
+                        small Silahkan mengikuti langkah-langkah dibawah ini untuk "Perpanjanga Surat Tanda Nomor Kendaraan (STNK)".
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.m-0
+                        .big-text 
+                            .big-text-left
+                                input(type="checkbox").btn.btn-white
+                            .big-text-right
+                                | Ambil antrian di "mesin antrian" dengan menekan tombol "start"
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.m-0
+                        .big-text 
+                            .big-text-left
+                                input(type="checkbox").btn.btn-white
+                            .big-text-right
+                                | Pas foto 3x2cm berwarna dengan background warna biru (1 lembar)
+            //- end of card mekanisme
+
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card
+                        .big-text 
+                            .big-text-left
+                                input(type="checkbox").btn.btn-white
+                            .big-text-right
+                                | Teks panjang yang mungkin saja bisa keluar suatu saat, yak seperti inilah hasilnya jika dicard ada teks yang isinya panjang.
+
             //- card contact
             .grid-center 
                 .col-8_md-12_sm-12
                     .title 
-                        h2 Alamat dan Jadwal
-                        small Berikut alamat dan jadwal untuk bisa melakukan "Perpanjang Surat Tanda Kendaraan Bermotor(STNK) di Kota Bekasi" 
+                        h2 Kontak
+                        small Anda bisa menghubungi kontak berikut untuk keterangan lebih lanjut. 
                     
             .grid-center 
                 .col-8_md-12_sm-12
-                    .big-result-card.big-result-card--map
-                        .big-result-card-map-embed
-                            iframe.map(src="//www.google.com/maps/embed/v1/place?q=samsat,bekasi&zoom=17&key=AIzaSyALC1j4_h9NQGFcK3wtYHVDxn8fFhwB210")
-                        .big-result-card-map-text 
-                            p 
-                                strong Kantor Samsat Bekasi
-                                br
-                                | Jl. Maju Negara 20, Bekasi Selatan 
-                            hr
-                            p
-                                strong Jadwal 
-                                    span.text-red (hari ini tutup)
-                            p    
-                                | Senin - Jum'at :&nbsp; 
-                                strong 07:00 - 14:00 WIB 
-                                br
-                                | Sabtu :&nbsp;
-                                strong 07:00 - 15:00 WIB                                        
-
+                    .big-result-card.m-0
+                        .big-text 
+                            i.fa.fa-phone 
+                            | &nbsp;(021) 546 - 09789
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.m-0
+                        .big-text 
+                            i.fa.fa-globe 
+                            | &nbsp;
+                            a(href="https://samsat.go" target="_blank").text-gray https://samsat.go
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.m-0
+                        .big-text 
+                            i.fa.fa-facebook 
+                            | &nbsp;
+                            a(href="https://samsat.go" target="_blank").text-gray https://facebook.com/samsat-bekasi
+            //- end of contact

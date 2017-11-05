@@ -24,17 +24,19 @@ window.modal = {
 
 //recomendation
 window.recomendation = {
+    smallText: document.querySelector('.form-control small'),
     show: function(data)
     {
+        var _this = this
+        this.smallText.style.display = 'none'
         ResultEl.style.display = 'inherit'
         ResultEl.style.opacity = 1
         var el = data.map(function(n){
-            return this.resultEl(n)
+            return _this.resultEl(n)
         })
-        console.log(el)
 
     },
-    resultEl: function(data)
+    resultEl: function(n)
     {
         return '<div class="col-12 card-result card-result-small">'+
             '<div class="card-result-inside">'+
@@ -47,6 +49,7 @@ window.recomendation = {
     },
     close: function()
     {
+        this.smallText.style.display = 'inherit'
         ResultEl.style.opacity = 0
         ResultEl.style.display = 'none'
     }

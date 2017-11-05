@@ -9,26 +9,29 @@ select.home-select-white
 
 .form-container
     .input-lg 
-        font-size: 1.8em
-        padding: .2em .5em
+        font-size: 1.9em
+        padding: .2em .5em !important
+    .input-md
+        font-size: 1.3em
+    input[type="text"], input[type="password"]
+        padding: 5px 10px
     .form-control
-        input[type="text"]
-            width: 100%
+        width: 100%
         small 
             color: $white-transparent
-    .input-home-search 
+    .input-outline-white 
         &:focus
             outline: none
         &::placeholder
             color: $white-transparent
             font-weight: 100
         cursor: text
-        font-size: 1.9em
         border-radius: 1em
         background: transparent 
         border: .1em solid $white-main
         color: $white-main
         text-align: center
+    .input-home-search 
         width: calc(100% - 1em) !important
 
 .icon-home-search 

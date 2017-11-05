@@ -18,7 +18,7 @@ nav.main.bigsearch
                 form.form-container
                     .form-control(style="position:relative")
                         i.fa.fa-search.icon-home-search 
-                        input#big-search-input.input-lg.input-home-search(type="text" placeholder="Apa yang ingin anda urus ?")
+                        input#big-search-input.input-lg.input-outline-white.input-home-search(type="text" placeholder="Apa yang ingin anda urus ?")
                         small 
                             | contoh: membuat surat nikah, perpanjang STNK, dll
 
@@ -50,10 +50,8 @@ nav.main.bigsearch
 
                         #bigsearch-recomendation.deck-result
                             .deck-result-content.bg-white(style="padding:0")
-                                .grid
-                                    include ../atoms/card-result
-                                    each n in recomendation_result
-                                        +card-result-view-small(n, big)
+                                #bigsearch-recomendation-result.grid
+                                    
                         //- end of big search reccomendation
 
         .m-lg
@@ -96,15 +94,18 @@ script.
     const sample_data = [
         {
             logo: 'images/logos/polda-metro-jaya.png',
-            text: 'Cara perpanjang STNK'
+            text: 'Cara perpanjang STNK',
+            link: 'result.html'
         },
         {
             logo: 'images/logos/kua.png',
-            text: 'Membuat surat nikah'
+            text: 'Membuat surat nikah',
+            link: 'result.html'
         },
         {
             logo: 'images/logos/bp2t.png',
-            text: 'Membuat surat ijin usaha'
+            text: 'Membuat surat ijin usaha',
+            link: 'result.html'
         }
     ]
 

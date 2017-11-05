@@ -1,0 +1,21 @@
+extends layouts/default
+block title
+    title Perpanjang Surat Tanda Kendaraan Bermotor (STNK) - Birokrasi Mudah, Serius Kok
+
+block content
+    #input-otp
+        .container 
+            .grid-center
+                .col-12
+                    h1 Ubah Data "Perpanjang STNK di Kota Bekasi"
+                    p Silahkan cek email anda untuk mendapatkan password. Jika password tidak ada klik 
+                        a(href="") request password.
+                        br
+                        | Jika tidak ada password, email anda belumn terdaftar di sistem kami. Klik 
+                        a(href="") daftarkan email lembaga.
+
+            .grid-center 
+                .col-6_md-12_sm-12 
+                    form.form-container 
+                        input.input-md.input-outline-white.form-control(type="password" placeholder="Masukan password dan tekan enter")
+                        small ! Password salah, silahkan ulangi lagi

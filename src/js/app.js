@@ -28,21 +28,23 @@ window.recomendation = {
     show: function(data)
     {
         var _this = this
+        var el = ''
         this.smallText.style.display = 'none'
         ResultEl.style.display = 'inherit'
         ResultEl.style.opacity = 1
-        var el = data.map(function(n){
-            return _this.resultEl(n)
+        data.map(function(n){
+            el += _this.resultEl(n)
         })
+        document.getElementById('bigsearch-recomendation-result').innerHTML = el
 
     },
     resultEl: function(n)
     {
         return '<div class="col-12 card-result card-result-small">'+
             '<div class="card-result-inside">'+
-                '<div class="logo"> <img src="'+n.image+'" title="logo lembaga"/></div>'+
+                '<div class="logo"> <img src="'+n.logo+'" title="logo lembaga"/></div>'+
                 '<div class="text">'+
-                    '<div class="text-title"><a href="result.html">'+n.text+'</a></div>'+
+                    '<div class="text-title"><a href="'+n.link+'">'+n.text+'</a></div>'+
                 '</div>'+
             '</div>'+
         '</div>'

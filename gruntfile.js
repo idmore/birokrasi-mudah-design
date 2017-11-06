@@ -26,7 +26,7 @@ module.exports = grunt => {
             style: 'inline'
           },
           files: [{
-            src: '*.sass',
+            src: 'style.sass',
             cwd: 'src/sass/',
             dest: 'dist/css',
             expand: true,

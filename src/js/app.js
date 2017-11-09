@@ -25,6 +25,14 @@ window.modal = {
 //recomendation
 window.recomendation = {
     smallText: document.querySelector('.form-control small'),
+    setText: function(text)
+    {
+        this.smallText.style.display = 'none'
+        ResultEl.style.display = 'inherit'
+        ResultEl.style.opacity = 1
+        var el = '<div class="col-12 card-result card-result-small">'+text+'</div>'
+        document.getElementById('bigsearch-recomendation-result').innerHTML = el
+    },
     show: function(data)
     {
         var _this = this

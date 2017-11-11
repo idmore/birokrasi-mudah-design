@@ -47,7 +47,7 @@ block content
                                 br
                                 | Sabtu :&nbsp;
                                 strong 07:00 - 15:00 WIB 
-                            a(href="javascript:;" style="display:block;text-decoration:none;text-align:center").btn.btn-outline-white Tampilan 2 lokasi lainnya
+                            a(href="javascript:;" onclick="modal.show('Lokasi perpanjang sim', 'modal-maps')" style="display:block;text-decoration:none;text-align:center").btn.btn-outline-white Tampilan 2 lokasi lainnya
             //- end of card alamat dan jadwal
 
             //- card persyaratan
@@ -135,3 +135,46 @@ block content
                             | &nbsp;
                             a(href="https://samsat.go" target="_blank").text-gray https://facebook.com/samsat-bekasi
             //- end of contact
+
+        #modal-maps.hide 
+            .grid-center 
+                .col-8_md-12_sm-12
+                    .big-result-card.big-result-card--map
+                        .big-result-card-map-embed
+                            iframe.map(src="//www.google.com/maps/embed/v1/place?q=samsat,bekasi&zoom=17&key=AIzaSyALC1j4_h9NQGFcK3wtYHVDxn8fFhwB210")
+                        .big-result-card-map-text 
+                            p 
+                                strong Kantor Samsat Bekasi
+                                br
+                                | Jl. Maju Negara 20, Bekasi Selatan 
+                            hr
+                            p
+                                strong Jadwal 
+                                    span.text-red (hari ini tutup)
+                            p    
+                                | Senin - Jum'at :&nbsp; 
+                                strong 07:00 - 14:00 WIB 
+                                br
+                                | Sabtu :&nbsp;
+                                strong 07:00 - 15:00 WIB 
+                br 
+                .col-8_md-12_sm-12
+                    .big-result-card.big-result-card--map
+                        .big-result-card-map-embed
+                            iframe.map(src="//www.google.com/maps/embed/v1/place?q=samsat,bekasi&zoom=17&key=AIzaSyALC1j4_h9NQGFcK3wtYHVDxn8fFhwB210")
+                        .big-result-card-map-text 
+                            p 
+                                strong Kantor Samsat Bekasi
+                                br
+                                | Jl. Maju Negara 20, Bekasi Selatan 
+                            hr
+                            p
+                                strong Jadwal 
+                                    span.text-red (hari ini tutup)
+                            p    
+                                | Senin - Jum'at :&nbsp; 
+                                strong 07:00 - 14:00 WIB 
+                                br
+                                | Sabtu :&nbsp;
+                                strong 07:00 - 15:00 WIB 
+                
